@@ -17,7 +17,7 @@ import java.util.List;
 @Slf4j
 public class GetVingadores {
 
-    String URI = "https://raw.githubusercontent.com/uolhost/test-backEnd-Java/master/referencias/vingadores.json";
+    String URI = "vingadores";
 
     Vingadores vingadores;
 
@@ -37,6 +37,12 @@ public class GetVingadores {
             System.out.println("Codinome: " + vingador.getCodinome());
         }
         return listaVingadores;
+    }
+
+
+    public static void main(String[] args) throws JsonProcessingException {
+        final GetVingadores getVingadores = new GetVingadores();
+        
     }
 }
 

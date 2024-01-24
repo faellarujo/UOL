@@ -42,8 +42,6 @@ public class GetLigadaJustica {
     }
 
 
-
-
     public List<String> consultaEndPoint() throws IOException {
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(endpoint).openConnection();
@@ -69,7 +67,6 @@ public class GetLigadaJustica {
 
                     // Considerando que stringToXML é uma função que você implementou para converter XML em lista de strings
                     final List<String> list = new ArrayList<>(stringToXML(xmlResponse));
-
 
                     lisLigaDaJustica = list;
                     lisLigaDaJustica.forEach(codinome -> System.out.println(codinome));
